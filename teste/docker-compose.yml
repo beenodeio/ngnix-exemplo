@@ -6,9 +6,6 @@ services:
         container_name: nginx
         image: nginx:alpine
         restart: always
-        build:
-            context: .
-            dockerfile: Dockerfile
         ports:
             - "80:80"
             - "443:443"
